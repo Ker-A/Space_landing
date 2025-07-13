@@ -2,7 +2,7 @@
 import Particles from "../components/Particles";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
-
+import Info from "../components/Info.astro";
 const items = [
   { label: "Home", href: "#" },
   { label: "About", href: "#" },
@@ -13,14 +13,11 @@ const items = [
 ---
 
 <Layout>
- <header>
-    <Header />
- </header>
-  <div class="w-full h-full relative bg-black">
+  <div class="fixed inset-0 -z-10 w-full h-full bg-black">
     <Particles
       client:load
       particleColors={["#ffffff", "#ffffff"]}
-      particleCount={200}
+      particleCount={500}
       particleSpread={10}
       speed={0.1}
       particleBaseSize={100}
@@ -28,5 +25,13 @@ const items = [
       alphaParticles={false}
       disableRotation={false}
     />
+    
   </div>
+  <header>
+    <Header />
+  </header>
+  <main>
+    <Info/>
+  </main>
 </Layout>
+

@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+.font-zen-dots {
+  font-family: "Zen Dots", system-ui, sans-serif;
+}
+.font-metrophobic {
+  font-family: "Metrophobic", sans-serif;
+}

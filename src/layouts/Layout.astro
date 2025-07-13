@@ -1,6 +1,7 @@
 ---
 import "./src/styles/global.css";
 import GooeyNav from "../components/GooeyNav";
+import "@fontsource/zen-dots";
 
 const items = [
   { label: "Home", href: "#" },
@@ -19,7 +20,7 @@ const items = [
     <title>Astro Basics</title>
   </head>
   <body>
-      <div class="z-20 absolute text-center w-full my-10 flex justify-center">
+    <div class="z-20 absolute text-center w-full my-10 flex justify-center">
       <GooeyNav
         client:load
         items={items}
@@ -42,5 +43,9 @@ const items = [
     margin: 0;
     width: 100%;
     height: 100%;
+  }
+
+  body{
+    font-family: "Zen Dots", system-ui;
   }
 </style>

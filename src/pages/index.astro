@@ -3,6 +3,9 @@ import Particles from "../components/Particles";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Info from "../components/Info.astro";
+import Gallery from "../components/Gallery.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Footer from "../components/Footer.astro";
 const items = [
   { label: "Home", href: "#" },
   { label: "About", href: "#" },
@@ -25,13 +28,36 @@ const items = [
       alphaParticles={false}
       disableRotation={false}
     />
-    
   </div>
   <header>
     <Header />
   </header>
   <main>
-    <Info/>
-  </main>
-</Layout>
+    <div class="sm:grid sm:grid-cols-2 p-4">
+      <Info
 
+        title="Titulo 1"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut"
+      />
+      <Info
+        title="Titulo 2"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut"
+      />
+      <Info
+        title="Titulo 3"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut"
+      />
+      <Info
+        title="Titulo 4"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut"
+      />
+    </div>
+
+    <Gallery />
+    
+    <Testimonials/>
+  </main>
+  <footer>
+    <Footer />
+  </footer>
+</Layout>
